@@ -1,10 +1,13 @@
-const bookReducer =(state = {name: 'chaman'}, action) => {
+const initialState = {
+  books: []
+}
+const bookReducer =(state = initialState, action) => {
   switch (action.type) {
     case "ADD_BOOK":
       console.log('ADD_BOOK called')
       return {
         ...state,
-        name: action.name
+        books: [...state.books, action.name]
       }
     default:
       return state;

@@ -3,17 +3,7 @@ import { connect } from 'react-redux';
 import {addBook} from './AddBookAction';
 import store from "./store"
 class CreateBook extends Component {
-
-  // constructor(props) {
-  //   super(props);
-  //   this.state = {value: ''};
-  //   //this.handleChange = this.handleChange.bind(this);
-  //   //this.sendBook = this.sendBook.bind(this);
-  // }
-  // handleChange(event) {
-  //   this.setState({value: event.target.value});
-  // }
-
+  
   state ={
     value: ''
   }
